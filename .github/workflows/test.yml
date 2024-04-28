@@ -1,0 +1,17 @@
+name: test
+
+on: 
+  push:
+    branches:
+      - master
+jobs:
+  my_testing:
+    runs-on: ubuntu-latest
+    steps:
+    - name : print hello message
+      run : echo "hello world from testing"
+  my_deploy:
+    runs-on: ubunru-latest
+    steps:
+    - name : print hello message
+      run : echo " hello world from deploy"
