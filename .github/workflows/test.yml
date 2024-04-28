@@ -4,15 +4,19 @@ on:
   push:
     branches:
       - master
+      
 jobs:
   my_testing:
     runs-on: ubuntu-latest
+    
     steps:
     - name : print hello message in testing
       run : echo "hello world from testing job"
+      
   my_deploy:
     runs-on: ubunru-latest
     needs: [my_testing]
+    
     steps:
     - name : print hello message in deploy
       run : echo " hello world from deploy job"
