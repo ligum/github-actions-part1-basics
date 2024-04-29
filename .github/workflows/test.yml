@@ -21,7 +21,7 @@ jobs:
         echo "hello message1"
         exho "hello message2"
         echo "application name: ${{ env.APPLICATION_NAME }}"
-  |
+ |
       
   my_deploy:
     runs-on: ubuntu-latest
