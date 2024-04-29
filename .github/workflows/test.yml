@@ -27,6 +27,9 @@ jobs:
 
     - name: git clone my repo
       uses: actions/checkout@v1
+
+    - name: list current folder
+      run : ls -la
       
         
   my_deploy:
