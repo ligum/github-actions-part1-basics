@@ -11,7 +11,7 @@ on:
       
 jobs:
   my_testing:
-    runs-on: ubuntu-latest0
+    runs-on: ubuntu-latest
     
     steps:
     - name: print hello message in testing
@@ -22,7 +22,7 @@ jobs:
         echo "hello message1"
         echo "hello message2"
         echo "application name: ${{ env.APPLICATION_NAME }}"
-
+|
     - name: list current folder
       run : ls -la
 
