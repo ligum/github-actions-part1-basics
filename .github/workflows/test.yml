@@ -1,6 +1,6 @@
 name: github-actions-basics
 env:
-  APPLICATION_NAMR: "MyFlask"
+  APPLICATION_NAME: "MyFlask"
   DEPLOY_PACKAGE_NAME    : "flask-deploy-ver-${{ github.sha }}"
 
 on: 
