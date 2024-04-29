@@ -21,7 +21,10 @@ jobs:
         echo "hello message1"
         echo "hello message2"
         echo "application name: ${{ env.APPLICATION_NAME }}"
-      
+
+    - name: list current folder
+      run : ls -la
+        
   my_deploy:
     runs-on: ubuntu-latest
     needs: [my_testing]
