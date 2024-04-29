@@ -21,14 +21,13 @@ jobs:
         echo "hello message1"
         exho "hello message2"
         echo "application name: ${{ env.APPLICATION_NAME }}"
- |
       
   my_deploy:
     runs-on: ubuntu-latest
     needs: [my_testing]
     
     steps:
-    - name : print hello message in deploy
+    - name: print hello message in deploy
       run : echo " hello world from deploy job"
 
     - name: printing deployment package
